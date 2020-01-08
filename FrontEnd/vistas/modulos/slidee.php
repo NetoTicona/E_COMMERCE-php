@@ -160,15 +160,17 @@
 		FLECHAS
 		======================================-->	
 
-		<div class="flechas" id="retroceder"><span class="fa fa-chevron-left">sss</span></div>
-	    <div class="flechas" id="avanzar"><span class="fa fa-chevron-right">ss</span></div>
-
-
-
-            
-              
-
-    
-    
-
+		<div class="flechas" id="retroceder"><span class="fa fa-chevron-left"></span></div>
+	    <div class="flechas" id="avanzar"><span class="fa fa-chevron-right"></span></div>
 </div>
+
+<center>
+	
+	<button id="btnSlide" class="backColor">
+		
+			<i class="fa fa-angle-up"></i>
+
+	</button>
+
+</center>
+
