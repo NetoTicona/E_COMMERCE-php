@@ -1,0 +1,190 @@
+/* banner */
+.banner{
+    position:relative;
+    overflow:hidden;
+    height: 260px;
+}
+
+.banner .textoBanner{
+    position:absolute ;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.banner .textoDer{
+    top:50px; 
+	left:70%; 
+	text-align:left;
+}
+
+
+
+.banner .textoIzq{
+	top:50px; 
+	left:5%; 
+    text-align:left;
+    
+}
+
+.banner .textoCentro{
+	top:50px; 
+	left:50%;
+	width:800px; 
+	margin-left: -400px;
+	text-align:center;
+}
+
+/* Barra Productos */
+.barraProductos .organizarProductos span{
+    margin-left:5px;
+}
+
+
+
+/* ventana de productos destacados */
+
+.tituloDestacado h1{
+	margin-top:-5px;
+}
+
+.tituloDestacado button span{
+	margin-left:5px;
+}
+
+
+
+.productos ul li a img:hover{
+	transition: .3s all ease;
+	opacity:.8;
+	transform: scale(1.1,1.1);
+}
+
+		/* vtrina en lista  */
+.productos ul li h1{
+	margin-top:-10px;
+}		
+
+.oferta{
+	text-decoration:line-through;
+	color:#ccc;
+	font-size:15px;
+}
+
+.fontSize{
+	font-size: 12px;
+}
+
+.productos ul li h1 small a{
+	color:#777;
+}
+
+/* Sistema Extra Large*/
+@media(min-width:1200px){
+
+	.banner{
+		height:260px;
+	}
+
+}
+/* Escritorio Large */
+@media (max-width:1199px) and (min-width:992px){
+}
+/* escriptrio Medium */
+@media ( max-width:991px ) and (min-width:768px){
+}
+/* escriptrio Small */
+@media ( max-width:767px ) and (min-width:576px){
+	.banner{
+		height:100px;
+	}
+
+	.banner .textoDer, .banner .textoCentro, .banner .textoIzq{
+		top:30px; 
+		left:50%;
+		width:800px; 
+		margin-left: -400px;
+		text-align:center;
+		text-shadow:2px 2px 20px black;
+	}
+
+	.textoBanner h1{
+		font-size:20px;
+		line-height:5px;
+	}
+
+	.textoBanner h2{
+		font-size:20px;
+		line-height:5px;
+	}
+
+	.textoBanner h3{
+		font-size:15px;
+		line-height:5px;
+	}
+
+	.tituloDestacado h1{
+		text-align:center;
+	}
+
+	.tituloDestacado button{
+		position: absolute;
+		left:50%;
+		width:60%;
+		height: 60%;
+		margin-left:-20%;
+		margin-top: 20px;
+
+	}
+
+	.productos ul li h1 small{
+		font-size:16px;
+	}
+}
+/* Small*/
+@media (max-width:575px){
+	.banner{
+		height:100px;
+	}
+
+	.banner .textoDer, .banner .textoCentro, .banner .textoIzq{
+		top:30px; 
+		left:50%;
+		width:800px; 
+		margin-left: -400px;
+		text-align:center;
+		text-shadow:2px 2px 20px black;
+	}
+
+	.textoBanner h1{
+		font-size:20px;
+		line-height:5px;
+	}
+
+	.textoBanner h2{
+		font-size:20px;
+		line-height:5px;
+	}
+
+	.textoBanner h3{
+		font-size:15px;
+		line-height:5px;
+	}
+
+	.tituloDestacado h1{
+		text-align:center;
+	}
+
+	.tituloDestacado button{
+		position: absolute;
+		left:50%;
+		width:60%;
+		height: 60%;
+		margin-left:-20%;
+		margin-top: 5%;
+
+	}
+
+	.productos ul li h1 small{
+		font-size:16px;
+	}
+
+}

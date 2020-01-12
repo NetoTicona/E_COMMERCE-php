@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="<?php echo $Urlruta?>vistas/css/cabezote.css">
     <link rel="stylesheet" href="<?php echo $Urlruta?>vistas/css/slide.css"  >
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <link rel="stylesheet" href="<?php echo $Urlruta?>vistas/css/destaProd.css"  >
 
     <?php 
     $rpta = ControladorPlantilla::ctrEstiloPlantilla();
@@ -86,6 +87,8 @@ if( isset( $_GET["ruta"] ) ){
 }else{
     //no vienen variables get
     include "modulos/slidee.php";
+    include "modulos/destacados.php";
+    
 }
 
 

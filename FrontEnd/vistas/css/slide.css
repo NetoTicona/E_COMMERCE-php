@@ -15,7 +15,7 @@ SLIDE
 	left:0%;
 	margin:auto;
 	height:auto;
-	width:400%;
+	width:400%;  /* el ancho depende de la cantidad de items que hayamos colocado , esto lse considerara como 100% para el li*/
 	clear:both;
 	display: table;
 }

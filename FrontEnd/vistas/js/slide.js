@@ -1,5 +1,7 @@
 var item = 0;
 var itemPAginado = $("#paginacion li");
+//console.log( itemPAginado.length  );
+
 var interrumpirCiclo = false; 
 var imgPRoducto = $('.imgProducto');
 var titulos1 = $("#slide h1");
@@ -48,7 +50,7 @@ $(btnVerProducto[item]).animate({"top":30 +"px", "opacity": 1},600)
 
 function avanzar(){
 
-    if( item == 3){
+    if( item ==  itemPAginado.length -1  ){
         item=0
     }else{
         item++
@@ -119,3 +121,10 @@ $("#btnSlide").click(function(){
 	}
 
 })
+ /* manilpulamnos en css del slide  */
+ /* Algunos punto simportantes: */
+ /* Slide ul debe aumentar 100 por cada imagen */
+ /* slide ul li considera lo anterior como 100%, asi q est se debe dividr 100%/cantidaad de elementos */
+
+ $('#slide ul li').css({"width":itemPAginado.length*100 + "%"});
+ $('#slide ul li').css({"width":(100/itemPAginado.length) + "%"});
